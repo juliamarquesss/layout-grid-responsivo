@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #B22222;
+}
+
+header{
+    font-size: 20px;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: aliceblue;
+    align-items: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+
+footer{
+    
+    
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    display: flex;
+    background-color: aliceblue;
+
+}
+
+aside, ul, li{
+    gap: 20px;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 10px;
+    background-color: #8B0000	;
+
+}
+
+li:hover{
+    background-color: #B22222;
+    font-style: sub;
+}
+
+
+#conteiner{	
+     max-width: 800px;
+    margin: 0 auto;
+    justify-items: flex;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    repeat(3, 100px);
+  
+}
+
+.a{
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #8B0000;
+    grid-column: 1;
+    grid-row: 3/4;
+}
+
+.b{
+    flex-wrap: wrap;
+    display: flex;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #8B0000;
+    text-align: justify;
+    grid-column: 2;
+    grid-row: 3/4;
+}
+
+.c{
+    flex-wrap: wrap;
+    display: flex;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #8B0000;
+    text-align: justify;
+    grid-column: 3;
+    grid-row: 3/4;
+}
+
+.img{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    
+    #conteiner{
+        grid-row: auto;    
+        display: block;
+    }
+   
+    
+}
